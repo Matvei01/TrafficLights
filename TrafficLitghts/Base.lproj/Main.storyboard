@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina3_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -13,37 +13,33 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TrafficLitghts" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4jn-LH-LcJ">
-                                <rect key="frame" x="112" y="75" width="190" height="189.5"/>
+                                <rect key="frame" x="109" y="31" width="102" height="101.5"/>
                                 <color key="backgroundColor" systemColor="systemRedColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="4jn-LH-LcJ" secondAttribute="height" multiplier="1:1" id="Bji-sI-saJ"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bLA-ge-P8q">
-                                <rect key="frame" x="112" y="282" width="190" height="189.5"/>
+                                <rect key="frame" x="109" y="152.5" width="102" height="101.5"/>
                                 <color key="backgroundColor" systemColor="systemYellowColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="bLA-ge-P8q" secondAttribute="height" multiplier="1:1" id="eh9-rj-pKs"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="weY-6e-LiD">
-                                <rect key="frame" x="112" y="487.5" width="190" height="190"/>
+                                <rect key="frame" x="109" y="274" width="102" height="102"/>
                                 <color key="backgroundColor" systemColor="systemGreenColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="weY-6e-LiD" secondAttribute="height" multiplier="1:1" id="fnl-F8-37d"/>
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2SC-9b-zp9">
-                                <rect key="frame" x="93" y="723" width="228" height="62"/>
+                                <rect key="frame" x="89" y="393" width="142" height="42"/>
                                 <color key="backgroundColor" systemColor="linkColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="62" id="dDm-H5-pK6"/>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="228" id="s3Y-uf-JbO"/>
-                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" title="START">
@@ -58,12 +54,13 @@
                         <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="4jn-LH-LcJ" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.211663" id="2Sw-50-flm"/>
-                            <constraint firstItem="2SC-9b-zp9" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="8Te-ID-kTf"/>
-                            <constraint firstItem="2SC-9b-zp9" firstAttribute="top" secondItem="weY-6e-LiD" secondAttribute="bottom" constant="45.666666666666742" id="XGv-p0-fjT"/>
-                            <constraint firstItem="bLA-ge-P8q" firstAttribute="top" secondItem="4jn-LH-LcJ" secondAttribute="bottom" constant="17.333333333333314" id="aBt-2Y-0z8"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="2SC-9b-zp9" secondAttribute="trailing" constant="89" id="9JM-49-F3L"/>
+                            <constraint firstItem="2SC-9b-zp9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="89" id="ZW2-9f-rBL"/>
+                            <constraint firstItem="bLA-ge-P8q" firstAttribute="top" secondItem="4jn-LH-LcJ" secondAttribute="bottom" constant="20" id="aBt-2Y-0z8"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="2SC-9b-zp9" secondAttribute="bottom" constant="45" id="cwK-Lp-kfZ"/>
                             <constraint firstItem="4jn-LH-LcJ" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="d6v-Uz-oFX"/>
                             <constraint firstItem="bLA-ge-P8q" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.211663" id="f1u-Yd-ngc"/>
-                            <constraint firstItem="weY-6e-LiD" firstAttribute="top" secondItem="bLA-ge-P8q" secondAttribute="bottom" constant="15.999999999999943" id="p6Y-1P-Mbo"/>
+                            <constraint firstItem="weY-6e-LiD" firstAttribute="top" secondItem="bLA-ge-P8q" secondAttribute="bottom" constant="20" id="p6Y-1P-Mbo"/>
                             <constraint firstItem="weY-6e-LiD" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.211663" id="pJU-AL-q42"/>
                             <constraint firstItem="4jn-LH-LcJ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="31" id="tdm-CA-mWk"/>
                             <constraint firstItem="weY-6e-LiD" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="v8r-7R-Xa9"/>
@@ -79,7 +76,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="26.635514018691588" y="51.835853131749467"/>
+            <point key="canvasLocation" x="26.25" y="51.25"/>
         </scene>
     </scenes>
     <resources>
