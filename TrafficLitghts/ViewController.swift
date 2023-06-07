@@ -19,9 +19,9 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var startButton: UIButton!
     
-    private var carrentLight = CurrentLight.red
-    private var lightIsOn: CGFloat = 1
-    private var lightIsOf: CGFloat = 0.3
+    private var currentLight = CurrentLight.red
+    private let lightIsOn: CGFloat = 1
+    private let lightIsOf: CGFloat = 0.3
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -44,22 +44,22 @@ class ViewController: UIViewController {
             startButton.setTitle("NEXT", for: .normal)
     }
     
-        switch carrentLight {
+        switch currentLight {
         case .red:
             redLight.alpha = lightIsOn
             greenLight.alpha = lightIsOf
             yellowLight.alpha = lightIsOf
-            carrentLight = .yellow
+            currentLight = .yellow
         case .yellow:
             redLight.alpha = lightIsOf
             greenLight.alpha = lightIsOf
             yellowLight.alpha = lightIsOn
-            carrentLight = .green
+            currentLight = .green
         case .green:
             redLight.alpha = lightIsOf
             greenLight.alpha = lightIsOn
             yellowLight.alpha = lightIsOf
-            carrentLight = .red
+            currentLight = .red
         }
     }
 }
