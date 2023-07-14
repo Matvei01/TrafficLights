@@ -70,9 +70,15 @@ class ViewController: UIViewController {
                         equalTo: view.safeAreaLayoutGuide.topAnchor,
                         constant: 35
                     ),
-                    firstLight.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-                    firstLight.heightAnchor.constraint(equalToConstant: 150),
-                    firstLight.widthAnchor.constraint(equalToConstant: 150)
+                    firstLight.centerXAnchor.constraint(
+                        equalTo: view.centerXAnchor
+                    ),
+                    firstLight.heightAnchor.constraint(
+                        equalToConstant: 150
+                    ),
+                    firstLight.widthAnchor.constraint(
+                        equalToConstant: 150
+                    )
                 ]
             )
         } else {
@@ -82,9 +88,15 @@ class ViewController: UIViewController {
                         equalTo: secondLight?.bottomAnchor ?? NSLayoutYAxisAnchor(),
                         constant: 20
                     ),
-                    firstLight.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-                    firstLight.heightAnchor.constraint(equalToConstant: 150),
-                    firstLight.widthAnchor.constraint(equalToConstant: 150)
+                    firstLight.centerXAnchor.constraint(
+                        equalTo: view.centerXAnchor
+                    ),
+                    firstLight.heightAnchor.constraint(
+                        equalToConstant: 150
+                    ),
+                    firstLight.widthAnchor.constraint(
+                        equalToConstant: 150
+                    )
                 ]
             )
         }
